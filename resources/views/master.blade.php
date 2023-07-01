@@ -17,13 +17,6 @@
 
 <body>
     {{ View::make('header')}}
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                alert("all set");
-            })
-        })
-    </script>
     @yield('content')
     {{ View::make('footer')}}
 

@@ -45,7 +45,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'LG Fridge',
                 'price' => '17000',
-                'description' => 'LG 185 L Direct Cool Single Door 5 Star Refrigerator with Base Drawer with Smart Inverter Compressor, Smart Connect, Fast Ice Making  (Scarlet Euphoria, GL-D201ASEU)',
+                'description' => 'LG 185 L Direct Cool Single Door 5 Star Refrigerator with Base Drawer with Smart Inverter Compressor, Smart Connect',
                 'category' => 'Fridge',
                 'gallery' => "https://rukminim1.flixcart.com/image/416/416/xif0q/refrigerator-new/t/l/b/-original-imagqsgjqhhetu2g.jpeg?q=70"
             ],

@@ -8,8 +8,8 @@
             <div class="carousel-item {{$item['id']==1? 'active' : ''}}">
                 <a href="detail/{{$item['id']}}">
                     <img class="slider-img" src="{{$item['gallery']}}" class="d-block w-1" alt="...">
-                        <h5>{{$item['name']}}</h5>
-                        <p>{{$item['description']}}               
+                    <h5>{{$item['name']}}</h5>
+                    <p>{{$item['description']}}
                 </a>
             </div>
             @endforeach

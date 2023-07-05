@@ -1,9 +1,15 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Session;
 
-$total = ProductController::cartItem();
+$total = 0;
+if (Session::has('user')) {
+    $total = ProductController::cartItem();
+}
+
 ?>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,6 +27,17 @@ $total = ProductController::cartItem();
         </form>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a class="nav-link" href="#">Cart({{$total}})</a></li>
+            @if(Session::has('user'))
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </li>
+            @else
+            <li><a href="/login">Login</a></li>
+            @endif
         </ul>
     </div>
 </nav>

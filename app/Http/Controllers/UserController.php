@@ -15,7 +15,7 @@ class UserController extends Controller
 
             return "User Email or password doest'n exist.";
         } else {
-            $request->session()->put('user1', $user);
+            $request->session()->put('user', $user);
             return redirect('/');
         }
     }

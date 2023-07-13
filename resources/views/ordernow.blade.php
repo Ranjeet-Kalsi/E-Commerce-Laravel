@@ -24,7 +24,7 @@
         </table>
         <form action=""></form>
         <div class="form-group">
-            <textarea class="form-control" cols="30" rows="3"></textarea>
+            <textarea class="form-control" cols="30" rows="3" placeholder="Type your Address Here" required></textarea>
         </div>
         <div class="form-group">
             <label for="">Payment Mode</label>
